@@ -182,7 +182,7 @@ preplace port clk -pg 1 -y 130 -defaultsOSRD
 preplace portBus switches -pg 1 -y 70 -defaultsOSRD
 preplace inst AXI_PWM_0 -pg 1 -lvl 1 -y 90 -defaultsOSRD
 preplace netloc AXI_PWM_0_PWM 1 1 1 N
-preplace netloc button_l_1 1 0 1 20
+preplace netloc button_l_1 1 0 1 N
 preplace netloc clk_1 1 0 1 NJ
 preplace netloc switches_1 1 0 1 NJ
 levelinfo -pg 1 0 140 280 -top 0 -bot 180
