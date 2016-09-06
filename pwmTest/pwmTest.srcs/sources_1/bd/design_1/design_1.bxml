@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1473165719"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1473165719"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1473165719"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1473172166"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1473172166"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1473172166"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/design_1_AXI_PWM_0_0/design_1_AXI_PWM_0_0.xci" Type="IP">
         <Instance HierarchyPath="AXI_PWM_0"/>

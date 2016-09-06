@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
---Date        : Tue Sep  6 14:41:58 2016
+--Date        : Tue Sep  6 16:29:26 2016
 --Host        : roozbeh-ThinkPad-T520 running 64-bit Linux Mint 18 Sarah
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper

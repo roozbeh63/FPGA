@@ -44,28 +44,24 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z020clg484-1
   set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.cache/wt [current_project]
-  set_property parent.project_path C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.xpr [current_project]
+  set_property webtalk.parent_dir /home/roozbeh/git/pwmTest/pwmTest.cache/wt [current_project]
+  set_property parent.project_path /home/roozbeh/git/pwmTest/pwmTest.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.cache/ip
-  C:/Users/roozbeh_lap/Documents/GitHub/vivado/FIFO_ip
+  /home/roozbeh/git/pwmTest/pwmTest.cache/ip
+  /home/roozbeh/vivado/FIFO_ip
 } [current_project]
-  set_property ip_output_repo c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.cache/ip [current_project]
-  add_files -quiet C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.runs/synth_1/design_1.dcp
-  read_xdc -mode out_of_context -ref design_1 C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/design_1_ooc.xdc
-  set_property processing_order EARLY [get_files C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
-  read_xdc C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc
+  set_property ip_output_repo /home/roozbeh/git/pwmTest/pwmTest.cache/ip [current_project]
+  add_files -quiet /home/roozbeh/git/pwmTest/pwmTest.runs/synth_1/design_1.dcp
+  read_xdc -mode out_of_context -ref design_1 /home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/design_1_ooc.xdc
+  read_xdc /home/roozbeh/git/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc
   link_design -top design_1 -part xc7z020clg484-1
   write_hwdef -file design_1.hwdef
   close_msg_db -file init_design.pb
