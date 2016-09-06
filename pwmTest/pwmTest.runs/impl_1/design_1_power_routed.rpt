@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
-| Date             : Tue Sep  6 15:24:55 2016
-| Host             : roozbeh-ThinkPad-T520 running 64-bit Linux Mint 18 Sarah
+| Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date             : Tue Sep 06 16:10:05 2016
+| Host             : DESKTOP-I6SIO7V running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_power_routed.rpt -pb design_1_power_summary_routed.pb -rpx design_1_power_routed.rpx
 | Design           : design_1
 | Device           : xc7z020clg484-1
@@ -30,9 +30,9 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.120 |
+| Total On-Chip Power (W)  | 0.121 |
 | Dynamic (W)              | 0.000 |
-| Device Static (W)        | 0.120 |
+| Device Static (W)        | 0.121 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 83.6  |
 | Junction Temperature (C) | 26.4  |
@@ -52,8 +52,8 @@ Table of Contents
 | Slice Logic  |     0.000 |        1 |       --- |             --- |
 |   Others     |     0.000 |        1 |       --- |             --- |
 | I/O          |     0.000 |        1 |       200 |            0.50 |
-| Static Power |     0.120 |          |           |                 |
-| Total        |     0.120 |          |           |                 |
+| Static Power |     0.121 |          |           |                 |
+| Total        |     0.121 |          |           |                 |
 +--------------+-----------+----------+-----------+-----------------+
 
 
@@ -65,9 +65,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.007 |       0.000 |      0.007 |
 | Vccaux    |       1.800 |     0.019 |       0.000 |      0.019 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
