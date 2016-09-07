@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1473172184">
-  <File Type="BITSTR-RBT" Name="design_1.rbt"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BITSTR-NKY" Name="design_1.nky"/>
+  <File Type="BITSTR-RBT" Name="design_1.rbt"/>
   <File Type="PWROPT-DRC" Name="design_1_drc_pwropted.rpt"/>
   <File Type="RDI-RDI" Name="design_1.vdi"/>
-  <File Type="BITSTR-SYSDEF" Name="design_1.sysdef"/>
+  <File Type="BITSTR-NKY" Name="design_1.nky"/>
   <File Type="BG-DRC" Name="design_1.drc"/>
+  <File Type="BITSTR-SYSDEF" Name="design_1.sysdef"/>
   <File Type="BG-BGN" Name="design_1.bgn"/>
   <File Type="BITSTR-MMI" Name="design_1.mmi"/>
   <File Type="BITSTR-BMM" Name="design_1_bd.bmm"/>
   <File Type="BITSTR-MSK" Name="design_1.msk"/>
   <File Type="BG-BIN" Name="design_1.bin"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="design_1_methodology_drc_routed.pb"/>
   <File Type="BG-BIT" Name="design_1.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="design_1_methodology_drc_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="design_1_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="design_1_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="design_1_timing_summary_postroute_physopted.rpt"/>
@@ -23,8 +23,8 @@
   <File Type="ROUTE-TIMING-RPX" Name="design_1_timing_summary_routed.rpx"/>
   <File Type="ROUTE-TIMING-PB" Name="design_1_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="design_1_timing_summary_routed.rpt"/>
-  <File Type="PA-TCL" Name="design_1.tcl"/>
   <File Type="ROUTE-STATUS-PB" Name="design_1_route_status.pb"/>
+  <File Type="PA-TCL" Name="design_1.tcl"/>
   <File Type="ROUTE-STATUS" Name="design_1_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="design_1_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="design_1_power_summary_routed.pb"/>
