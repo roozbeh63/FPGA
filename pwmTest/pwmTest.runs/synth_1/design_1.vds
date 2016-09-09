@@ -1,50 +1,54 @@
 #-----------------------------------------------------------
 # Vivado v2016.2 (64-bit)
-# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Tue Sep  6 16:29:44 2016
-# Process ID: 3744
-# Current directory: /home/roozbeh/git/pwmTest/pwmTest.runs/synth_1
-# Command line: vivado -log design_1.vds -mode batch -messageDb vivado.pb -notrace -source design_1.tcl
-# Log file: /home/roozbeh/git/pwmTest/pwmTest.runs/synth_1/design_1.vds
-# Journal file: /home/roozbeh/git/pwmTest/pwmTest.runs/synth_1/vivado.jou
+# Start of session at: Thu Sep 08 11:23:25 2016
+# Process ID: 4124
+# Current directory: C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.runs/synth_1
+# Command line: vivado.exe -log design_1.vds -mode batch -messageDb vivado.pb -notrace -source design_1.tcl
+# Log file: C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.runs/synth_1/design_1.vds
+# Journal file: C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/roozbeh/vivado/FIFO_ip'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/roozbeh/Xilinx/Vivado/2016.2/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/roozbeh_lap/Documents/GitHub/FPGA/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_AXI_PWM_0_0
+
 Command: synth_design -top design_1 -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3843 
+INFO: Helper process launched with PID 6732 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1023.219 ; gain = 138.137 ; free physical = 4347 ; free virtual = 10009
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 286.199 ; gain = 78.957
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1' [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/hdl/design_1.vhd:27]
-INFO: [Synth 8-3491] module 'design_1_AXI_PWM_0_0' declared at '/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ip/design_1_AXI_PWM_0_0/synth/design_1_AXI_PWM_0_0.vhd:56' bound to instance 'AXI_PWM_0' of component 'design_1_AXI_PWM_0_0' [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/hdl/design_1.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI_PWM_0_0' [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ip/design_1_AXI_PWM_0_0/synth/design_1_AXI_PWM_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/hdl/design_1.vhd:27]
+INFO: [Synth 8-3491] module 'design_1_AXI_PWM_0_0' declared at 'c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ip/design_1_AXI_PWM_0_0/synth/design_1_AXI_PWM_0_0.vhd:56' bound to instance 'AXI_PWM_0' of component 'design_1_AXI_PWM_0_0' [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/hdl/design_1.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI_PWM_0_0' [c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ip/design_1_AXI_PWM_0_0/synth/design_1_AXI_PWM_0_0.vhd:66]
 	Parameter GC_WIDTH bound to: 8 - type: integer 
 	Parameter FREQ bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'AXI_PWM' declared at '/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/AXI_PWM.vhd:34' bound to instance 'U0' of component 'AXI_PWM' [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ip/design_1_AXI_PWM_0_0/synth/design_1_AXI_PWM_0_0.vhd:92]
-INFO: [Synth 8-638] synthesizing module 'AXI_PWM' [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/AXI_PWM.vhd:52]
+INFO: [Synth 8-3491] module 'AXI_PWM' declared at 'c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/AXI_PWM.vhd:34' bound to instance 'U0' of component 'AXI_PWM' [c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ip/design_1_AXI_PWM_0_0/synth/design_1_AXI_PWM_0_0.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'AXI_PWM' [c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/AXI_PWM.vhd:52]
 	Parameter GC_WIDTH bound to: 8 - type: integer 
 	Parameter FREQ bound to: 16 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'pwmGenerator' [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/pwmGenerator.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'pwmGenerator' [c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/pwmGenerator.vhd:52]
 	Parameter GC_WIDTH bound to: 8 - type: integer 
 	Parameter FREQ bound to: 16 - type: integer 
-WARNING: [Synth 8-3848] Net s_axis_tready in module/entity pwmGenerator does not have driver. [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/pwmGenerator.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'pwmGenerator' (1#1) [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/pwmGenerator.vhd:52]
-WARNING: [Synth 8-3848] Net PWM in module/entity AXI_PWM does not have driver. [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/AXI_PWM.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'AXI_PWM' (2#1) [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/AXI_PWM.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'design_1_AXI_PWM_0_0' (3#1) [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ip/design_1_AXI_PWM_0_0/synth/design_1_AXI_PWM_0_0.vhd:66]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (4#1) [/home/roozbeh/git/pwmTest/pwmTest.srcs/sources_1/bd/design_1/hdl/design_1.vhd:27]
+WARNING: [Synth 8-3848] Net s_axis_tready in module/entity pwmGenerator does not have driver. [c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/pwmGenerator.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'pwmGenerator' (1#1) [c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/pwmGenerator.vhd:52]
+WARNING: [Synth 8-3848] Net PWM in module/entity AXI_PWM does not have driver. [c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/AXI_PWM.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'AXI_PWM' (2#1) [c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ipshared/user.org/axi_pwm_v1_0/sources_1/new/AXI_PWM.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'design_1_AXI_PWM_0_0' (3#1) [c:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/ip/design_1_AXI_PWM_0_0/synth/design_1_AXI_PWM_0_0.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (4#1) [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/sources_1/bd/design_1/hdl/design_1.vhd:27]
 WARNING: [Synth 8-3331] design pwmGenerator has unconnected port s_axis_tready
 WARNING: [Synth 8-3331] design pwmGenerator has unconnected port s_axis_tvalid
 WARNING: [Synth 8-3331] design AXI_PWM has unconnected port PWM
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1063.656 ; gain = 178.574 ; free physical = 4303 ; free virtual = 9967
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 323.723 ; gain = 116.480
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -54,50 +58,52 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1063.656 ; gain = 178.574 ; free physical = 4303 ; free virtual = 9967
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 323.723 ; gain = 116.480
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/roozbeh/git/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc]
-WARNING: [Vivado 12-584] No ports matched 'reset_rtl'. [/home/roozbeh/git/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/roozbeh/git/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:22]
+Parsing XDC File [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc]
+WARNING: [Vivado 12-4379] -period contains time 500000000.000000 which cannot be represented in single precision floating point without rounding by more than 1 picosecond [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:3]
+WARNING: [Vivado 12-4379] -waveform contains time 250000000.000000 which cannot be represented in single precision floating point without rounding by more than 1 picosecond [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'reset_rtl'. [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:24]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'reset_rtl'. [/home/roozbeh/git/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/roozbeh/git/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'reset_rtl'. [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:25]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/home/roozbeh/git/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/roozbeh/git/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/roozbeh/git/pwmTest/pwmTest.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/roozbeh/git/pwmTest/pwmTest.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1368.570 ; gain = 0.000 ; free physical = 3986 ; free virtual = 9697
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 634.340 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3976 ; free virtual = 9688
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3976 ; free virtual = 9688
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for AXI_PWM_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3976 ; free virtual = 9688
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3971 ; free virtual = 9682
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -140,7 +146,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3970 ; free virtual = 9682
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -157,9 +163,9 @@ WARNING: [Synth 8-3331] design design_1_AXI_PWM_0_0 has unconnected port s_axis_
 WARNING: [Synth 8-3331] design design_1_AXI_PWM_0_0 has unconnected port s_axis_tdata[0]
 WARNING: [Synth 8-3331] design design_1_AXI_PWM_0_0 has unconnected port s_axis_tvalid
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3970 ; free virtual = 9682
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3970 ; free virtual = 9682
+Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 634.340 ; gain = 427.098
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -170,9 +176,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3970 ; free virtual = 9682
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3970 ; free virtual = 9682
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 634.340 ; gain = 427.098
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -185,11 +191,15 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-681] value '500000000000.0ps' out of range, cropping to '214748368.0ps' [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:3]
+WARNING: [Synth 8-681] value '250000000000.0ps' out of range, cropping to '214748368.0ps' [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:3]
+WARNING: [Synth 8-681] value '500000000000.0ps' out of range, cropping to '214748368.0ps' [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:3]
+WARNING: [Synth 8-681] value '250000000000.0ps' out of range, cropping to '214748368.0ps' [C:/Users/roozbeh_lap/Documents/GitHub/FPGA/pwmTest/pwmTest.srcs/constrs_1/new/test.xdc:3]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -201,16 +211,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 634.340 ; gain = 427.098
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -227,7 +237,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -240,7 +250,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -252,25 +262,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -298,11 +308,11 @@ Report Instance Areas:
 |2     |  AXI_PWM_0 |design_1_AXI_PWM_0_0 |     0|
 +------+------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1368.570 ; gain = 483.488 ; free physical = 3963 ; free virtual = 9682
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 634.340 ; gain = 427.098
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1368.570 ; gain = 91.434 ; free physical = 3963 ; free virtual = 9682
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1368.578 ; gain = 483.496 ; free physical = 3963 ; free virtual = 9682
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 634.340 ; gain = 111.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 634.340 ; gain = 427.098
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -312,8 +322,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-25 Infos, 19 Warnings, 2 Critical Warnings and 0 Errors encountered.
+25 Infos, 26 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1368.578 ; gain = 408.941 ; free physical = 3963 ; free virtual = 9684
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1376.574 ; gain = 0.000 ; free physical = 3962 ; free virtual = 9684
-INFO: [Common 17-206] Exiting Vivado at Tue Sep  6 16:30:17 2016...
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 634.340 ; gain = 421.883
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 634.340 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 08 11:24:07 2016...

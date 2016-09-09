@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
-| Date         : Tue Sep  6 16:31:01 2016
-| Host         : roozbeh-ThinkPad-T520 running 64-bit Linux Mint 18 Sarah
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Thu Sep 08 11:24:55 2016
+| Host         : DESKTOP-I6SIO7V running 64-bit major release  (build 9200)
 | Command      : report_io -file design_1_io_placed.rpt
 | Design       : design_1
 | Device       : xc7z020
@@ -312,7 +312,7 @@ Table of Contents
 | L13        |             |            | GND                     | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | L14        |             |            | VCCINT                  | VCCINT      |             |         |            |      |                     |                      |         |            |           |          |      |                  |
 | L15        |             |            | GND                     | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
-| L16        |             | High Range | IO_L3N_T0_DQS_34        | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
+| L16        | clk         | High Range | IO_L3N_T0_DQS_34        | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | L17        |             | High Range | IO_L4P_T0_34            | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | L18        |             | High Range | IO_L12P_T1_MRCC_34      | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | L19        |             | High Range | IO_L12N_T1_MRCC_34      | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |

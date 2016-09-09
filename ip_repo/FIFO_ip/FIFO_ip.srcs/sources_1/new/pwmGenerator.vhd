@@ -70,6 +70,7 @@ process (clk)
 	variable count : integer range 0 to 50000;
 	begin
 		if (rising_edge(clk)) then
+		  PWM <= '1';
 		    --increasing the count for each clock cycle
 			count:= count+1;
 			--setting output to logic 1 when count reach duty cycle value
