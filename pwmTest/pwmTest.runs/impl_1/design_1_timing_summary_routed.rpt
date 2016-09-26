@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
-| Date         : Tue Sep  6 16:31:32 2016
-| Host         : roozbeh-ThinkPad-T520 running 64-bit Linux Mint 18 Sarah
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Thu Sep 08 11:25:39 2016
+| Host         : DESKTOP-I6SIO7V running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file design_1_timing_summary_routed.rpt -rpx design_1_timing_summary_routed.rpx
 | Design       : design_1
 | Device       : 7z020-clg484
@@ -129,13 +129,17 @@ Table of Contents
          NA           NA                     NA                   NA           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
 
 
-There are no user specified timing constraints.
+All user specified timing constraints are met.
 
 
 ------------------------------------------------------------------------------------------------
 | Clock Summary
 | -------------
 ------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)                     Period(ns)      Frequency(MHz)
+-----        ------------                     ----------      --------------
+sys_clk_pin  {0.000 250000000.000}            500000000.000   0.000           
 
 
 ------------------------------------------------------------------------------------------------

@@ -1,4 +1,6 @@
+set_property PACKAGE_PIN L16 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
+create_clock -add -name sys_clk_pin -period 500000000.0 -waveform {0 250000000} [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports button_l]
 set_property IOSTANDARD LVCMOS33 [get_ports {switches[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {switches[7]}]
