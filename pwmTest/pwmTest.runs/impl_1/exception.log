@@ -1,4 +1,0 @@
-ERROR: Exception caught trying to open file C:\Users\roozbeh_lap\Documents\GitHub\FPGA\pwmTest\pwmTest.runs\impl_1/runme.log
-	Exception name: Error
-	Exception error code: 70
-	Exception message: Permission denied
