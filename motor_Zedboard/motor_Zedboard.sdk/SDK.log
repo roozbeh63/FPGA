@@ -1,0 +1,12 @@
+12:06:43 INFO  : Launching XSDB server: xsdb -n -interactive /home/roozbeh/vivado/motor_Zedboard/motor_Zedboard.sdk/temp_xsdb_launch_script.tcl
+12:06:48 INFO  : XSDB server has started successfully.
+12:06:48 INFO  : Restoring global repository preferences: 
+		 /home/roozbeh/Xilinx/device-tree-xlnx
+12:06:48 INFO  : Processing command line option -hwspec /home/roozbeh/vivado/motor_Zedboard/motor_Zedboard.sdk/design_1_wrapper.hdf.
+16:23:39 INFO  : Launching XSDB server: xsdb -n -interactive /home/roozbeh/vivado/motor_Zedboard/motor_Zedboard.sdk/temp_xsdb_launch_script.tcl
+16:23:41 INFO  : XSDB server has started successfully.
+16:23:41 INFO  : Restoring global repository preferences: 
+		 /home/roozbeh/Xilinx/device-tree-xlnx
+16:23:41 INFO  : Processing command line option -hwspec /home/roozbeh/vivado/motor_Zedboard/motor_Zedboard.sdk/design_1_wrapper.hdf.
+16:23:41 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:23:48 INFO  : BSP Project P/device_tree_bsp_0 has been successfully migrated.
