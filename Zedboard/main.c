@@ -10,11 +10,13 @@
 #include <stddef.h>
 
 
-
+//#define DEBUG
 #define MAP_SIZE 4096UL
 #define MAP_MASK (MAP_SIZE -1)
-#define LED_BASE_ADDR 0x43C00000
-#define SWITCH_BASE_ADDR 0x41200000
+#define PWM_PERIOD_BASE_ADDR 0x43C10000
+#define PWM_DUTY_CYCLE_BASE_ADDR 0x43C10000 + 4
+#define PWM_ENABLE_BASE_ADDR 0x43C10000 + 8
+#define ENCODER_BASE_ADDR 0x43C00000
 
 void *getVirtualAddress(int phys_addr){
     void *mapped_base;
@@ -40,24 +42,35 @@ void *getVirtualAddress(int phys_addr){
 
 
 int main(){
-    int *_led1 = getVirtualAddress(LED_BASE_ADDR);
-    int *_led2 = getVirtualAddress(LED_BASE_ADDR + 4);
-    int *_led3 = getVirtualAddress(LED_BASE_ADDR + 8);
-    int *_led4 = getVirtualAddress(LED_BASE_ADDR + 12);
-    int *_switch = getVirtualAddress(SWITCH_BASE_ADDR);
-    int num=0;
-    int i = 0;
+    int *_PWM_period = getVirtualAddress(PWM_PERIOD_BASE_ADDR);
+    int *_duty_cycle = getVirtualAddress(PWM_DUTY_CYCLE_BASE_ADDR);
+    //int *_enable = getVirtualAddress(PWM_ENABLE_BASE_ADDR);
+    *_PWM_period = 0x186A0;
+    *_duty_cycle = 0xC350;
+    //*_enable = 0x0;
+    //*_duty_cycle = 0x5F5E100;
+
+    int *_encoder = getVirtualAddress(ENCODER_BASE_ADDR);
+#ifdef DEBUG
     printf("hello zedboard\n");
-    printf("led1%x\n", _led1);
-    printf("led2%x\n", _led2);
-    printf("led3%x\n", _led3);
-    printf("led4%x\n", _led4);
-    printf("switch%x\n", _switch);
+    printf("pwm%p\n", _PWM_period);
+    printf("duty cycle%p\n", _duty_cycle);
+    printf("encoder%p\n", _encoder);
+#endif
+
+    while(1){
+        //printf ("enable value%d\n", *_enable);
+        int data = *_encoder;
+        printf("encoder value%d\n", data & 0x7FFFFFFF);
+        printf("encoder direction%d\n", (data & 0x80000000)>>31);
+        sleep(0.8);
+    }
+    /*
     if (*_switch == 1){
         printf("num%x\n");
         *_led1 = 1;
     }
-    /*while(1){
+    while(1){
         if (num == 1024){
             num = 0;
         }
