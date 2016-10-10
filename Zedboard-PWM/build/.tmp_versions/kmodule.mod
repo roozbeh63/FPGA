@@ -1,2 +1,2 @@
-/home/roozbeh/Qt/Zedboard-kernel/build/kmodule.ko
-/home/roozbeh/Qt/Zedboard-kernel/build/kmodule.o
+/home/roozbeh/Git/FPGA/Zedboard-PWM/build/kmodule.ko
+/home/roozbeh/Git/FPGA/Zedboard-PWM/build/kmodule.o

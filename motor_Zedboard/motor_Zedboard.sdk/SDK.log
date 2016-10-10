@@ -10,3 +10,207 @@
 16:23:41 INFO  : Processing command line option -hwspec /home/roozbeh/vivado/motor_Zedboard/motor_Zedboard.sdk/design_1_wrapper.hdf.
 16:23:41 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
 16:23:48 INFO  : BSP Project P/device_tree_bsp_0 has been successfully migrated.
+15:40:13 INFO  : Launching XSDB server: xsdb -n -interactive /home/roozbeh/Git/FPGA/motor_Zedboard/motor_Zedboard.sdk/temp_xsdb_launch_script.tcl
+15:40:14 INFO  : XSDB server has started successfully.
+15:40:15 INFO  : Processing command line option -hwspec /home/roozbeh/Git/FPGA/motor_Zedboard/motor_Zedboard.sdk/design_1_wrapper.hdf.
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ddrcps is not found in Repositories
+ERROR: [Hsi 55-1594] Core ddrcps of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore globaltimerps is not found in Repositories
+ERROR: [Hsi 55-1594] Core globaltimerps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore ocmcps is not found in Repositories
+ERROR: [Hsi 55-1594] Core ocmcps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore pl310ps is not found in Repositories
+ERROR: [Hsi 55-1594] Core pl310ps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore pmups is not found in Repositories
+ERROR: [Hsi 55-1594] Core pmups of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore ramps is not found in Repositories
+ERROR: [Hsi 55-1594] Core ramps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore slcrps is not found in Repositories
+ERROR: [Hsi 55-1594] Core slcrps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore device_tree is not found in Repositories
+ERROR: [Hsi 55-1594] Core device_tree of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+15:40:19 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ddrcps is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ddrcps of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore globaltimerps is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core globaltimerps of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ocmcps is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ocmcps of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore pl310ps is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core pl310ps of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore pmups is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core pmups of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ramps is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ramps of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore slcrps is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core slcrps of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore device_tree is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core device_tree of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+15:40:19 INFO  : Unable to read in MSS file /home/roozbeh/Git/FPGA/motor_Zedboard/motor_Zedboard.sdk/device_tree_bsp_0/system.mss : null
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ddrcps is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ddrcps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore globaltimerps is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core globaltimerps of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ocmcps is not found in Repositories
+ERROR: [Hsi 55-1594] Core ocmcps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore pl310ps is not found in Repositories
+ERROR: [Hsi 55-1594] Core pl310ps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore pmups is not found in Repositories
+ERROR: [Hsi 55-1594] Core pmups of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore ramps is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ramps of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore slcrps is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core slcrps of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore device_tree is not found in Repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core device_tree of version  not found in repositories
+
+15:40:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+15:40:19 ERROR : Failed in generating sources
+15:40:19 INFO  : BSP Project P/device_tree_bsp_0 has been successfully migrated.
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ddrcps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ddrcps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore globaltimerps is not found in Repositories
+ERROR: [Hsi 55-1594] Core globaltimerps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore ocmcps is not found in Repositories
+ERROR: [Hsi 55-1594] Core ocmcps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore pl310ps is not found in Repositories
+ERROR: [Hsi 55-1594] Core pl310ps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore pmups is not found in Repositories
+ERROR: [Hsi 55-1594] Core pmups of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore ramps is not found in Repositories
+ERROR: [Hsi 55-1594] Core ramps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore slcrps is not found in Repositories
+ERROR: [Hsi 55-1594] Core slcrps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore device_tree is not found in Repositories
+ERROR: [Hsi 55-1594] Core device_tree of version  not found in repositories
+ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+15:40:36 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ddrcps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ddrcps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore globaltimerps is not found in Repositories
+ERROR: [Hsi 55-1594] Core globaltimerps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore ocmcps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ocmcps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore pl310ps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core pl310ps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore pmups is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core pmups of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ramps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ramps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore slcrps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core slcrps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore device_tree is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core device_tree of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+15:40:36 INFO  : Unable to read in MSS file /home/roozbeh/Git/FPGA/motor_Zedboard/motor_Zedboard.sdk/device_tree_bsp_0/system.mss : null
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ddrcps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ddrcps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore globaltimerps is not found in Repositories
+ERROR: [Hsi 55-1594] Core globaltimerps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ocmcps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ocmcps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore pl310ps is not found in Repositories
+ERROR: [Hsi 55-1594] Core pl310ps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore pmups is not found in Repositories
+ERROR: [Hsi 55-1594] Core pmups of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ramps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ramps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore slcrps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core slcrps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore device_tree is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core device_tree of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ddrcps is not found in Repositories
+ERROR: [Hsi 55-1594] Core ddrcps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore globaltimerps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core globaltimerps of version  not found in repositories
+ERROR: [Hsi 55-1597] SwCore ocmcps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ocmcps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore pl310ps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core pl310ps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore pmups is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core pmups of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore ramps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ramps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore slcrps is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core slcrps of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1597] SwCore device_tree is not found in Repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core device_tree of version  not found in repositories
+
+15:40:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+15:40:36 ERROR : Failed to get_connected_periphs
+Reason: ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+

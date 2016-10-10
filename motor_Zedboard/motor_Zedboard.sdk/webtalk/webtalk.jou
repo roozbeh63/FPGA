@@ -2,11 +2,11 @@
 # Webtalk v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # 
-# Start of session at: Mon Oct  3 16:14:54 2016
-# Process ID: 14379
-# Current directory: /home/roozbeh/vivado/motor_Zedboard/motor_Zedboard.sdk/webtalk
+# Start of session at: Fri Oct  7 15:40:44 2016
+# Process ID: 24783
+# Current directory: /home/roozbeh/Git/FPGA/motor_Zedboard/motor_Zedboard.sdk/webtalk
 # Command line: wbtcv -mode batch -source sdk_webtalk.tcl
-# Log file: /home/roozbeh/vivado/motor_Zedboard/motor_Zedboard.sdk/webtalk/webtalk.log
-# Journal file: /home/roozbeh/vivado/motor_Zedboard/motor_Zedboard.sdk/webtalk/webtalk.jou
+# Log file: /home/roozbeh/Git/FPGA/motor_Zedboard/motor_Zedboard.sdk/webtalk/webtalk.log
+# Journal file: /home/roozbeh/Git/FPGA/motor_Zedboard/motor_Zedboard.sdk/webtalk/webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

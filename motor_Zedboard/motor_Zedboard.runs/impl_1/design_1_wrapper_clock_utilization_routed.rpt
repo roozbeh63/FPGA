@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
-| Date              : Mon Oct  3 12:02:29 2016
-| Host              : roozbeh-ThinkPad-T520 running 64-bit Linux Mint 18 Sarah
+| Date              : Fri Oct  7 15:38:57 2016
+| Host              : roozbeh-ThinkPad-T520 running 64-bit Ubuntu 14.04.5 LTS
 | Command           : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
 | Design            : design_1_wrapper
 | Device            : 7z020-clg484

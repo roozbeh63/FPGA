@@ -7,3 +7,6 @@ dtc -I dts -O dtb -o devicetree.dtb system.dts
 16:23:49 **** Auto Build of project device_tree_bsp_0 ****
 make -k all 
 make: Nothing to be done for 'all'.
+15:40:20 **** Auto Build of project device_tree_bsp_0 ****
+make -k all 
+make: Nothing to be done for `all'.
