@@ -13,10 +13,10 @@
 //#define DEBUG
 #define MAP_SIZE 4096UL
 #define MAP_MASK (MAP_SIZE -1)
-#define PWM_PERIOD_BASE_ADDR 0x43C10000
-#define PWM_DUTY_CYCLE_BASE_ADDR 0x43C10000 + 4
-#define PWM_ENABLE_BASE_ADDR 0x43C10000 + 8
-#define ENCODER_BASE_ADDR 0x43C00000
+#define PWM_PERIOD_BASE_ADDR 0x43C00000
+#define PWM_DUTY_CYCLE_BASE_ADDR 0x43C00000 + 4
+#define PWM_ENABLE_BASE_ADDR 0x43C00000 + 8
+#define ENCODER_BASE_ADDR 0x43C10000
 
 void *getVirtualAddress(int phys_addr){
     void *mapped_base;
@@ -65,25 +65,6 @@ int main(){
         printf("encoder direction%d\n", (data & 0x80000000)>>31);
         sleep(0.8);
     }
-    /*
-    if (*_switch == 1){
-        printf("num%x\n");
-        *_led1 = 1;
-    }
-    while(1){
-        if (num == 1024){
-            num = 0;
-        }
-        else {
-            num++;
-        }
-        *_led1 = num;
-        *_led2 = num;
-        *_led3 = num;
-        *_led4 = num;
-        printf("num%x\n", num);
-        printf("led1%x\n", *_led1);
-        sleep(0.1);
-    }*/
+
     return 0;
 }

@@ -15,8 +15,8 @@
 
 #define NDEVICES 6
 #define REG_DIRECTION 0x004
-#define DIR_MASK 0x00000001
-#define POS_MASK 0x3FFFFFFF
+#define DIR_MASK 0x80000000
+#define POS_MASK 0x7FFFFFFF
 
 /* parameters */
 static int enc_ndevices = NDEVICES;
@@ -92,9 +92,9 @@ static ssize_t enc_read(struct file *f, char *buf,
 
     //real data
     pos = ioread32(encoders[minor]._register);
-    dir = ioread32(encoders[minor]._register + REG_DIRECTION);
+    //dir = ioread32(encoders[minor]._register + REG_DIRECTION);
 
-    dir &= DIR_MASK;
+    dir = (pos & DIR_MASK)>>31;
     pos &= POS_MASK;
 
     printk("position: %d, direction %d\n", pos, dir);
