@@ -10,7 +10,7 @@
 #include <stddef.h>
 
 
-//#define DEBUG
+#define DEBUG
 #define MAP_SIZE 4096UL
 #define MAP_MASK (MAP_SIZE -1)
 #define PWM_PERIOD_BASE_ADDR 0x43C00000
