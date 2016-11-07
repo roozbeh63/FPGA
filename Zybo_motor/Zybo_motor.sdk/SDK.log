@@ -1,0 +1,5 @@
+11:13:50 INFO  : Launching XSDB server: xsdb -n -interactive /home/roozbeh/Zybo_files/Zybo_motor/Zybo_motor.sdk/temp_xsdb_launch_script.tcl
+11:13:52 INFO  : XSDB server has started successfully.
+11:13:52 INFO  : Restoring global repository preferences: 
+		 /home/roozbeh/Downloads/device-tree-xlnx
+11:13:52 INFO  : Processing command line option -hwspec /home/roozbeh/Zybo_files/Zybo_motor/Zybo_motor.sdk/design_1_wrapper.hdf.

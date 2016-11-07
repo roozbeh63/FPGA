@@ -1,0 +1,34 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 330 -defaultsOSRD
+preplace port rotary_a -pg 1 -y 260 -defaultsOSRD
+preplace port rotary_b -pg 1 -y 20 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 350 -defaultsOSRD
+preplace port rotary_i -pg 1 -y 280 -defaultsOSRD
+preplace port pwm -pg 1 -y 70 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace inst rotary_encoder_0 -pg 1 -lvl 3 -y 230 -defaultsOSRD
+preplace inst pwm_ip_0 -pg 1 -lvl 3 -y 70 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 160 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 420 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 330 NJ 330 NJ
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 770
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 460
+preplace netloc pwm_ip_0_pwm 1 3 1 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 40 250 440
+preplace netloc rotary_i_1 1 0 3 NJ 280 NJ 320 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 2 490 300 780
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 350 NJ 350 NJ
+preplace netloc rotary_a_1 1 0 3 NJ 270 NJ 310 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 470
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 30 260 480 360 810
+preplace netloc rotary_b_1 1 0 3 NJ 20 NJ 20 NJ
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 790
+levelinfo -pg 1 0 240 630 930 1050 -top 0 -bot 560
+",
+}
+{
+   da_axi4_cnt: "2",
+   da_ps7_cnt: "1",
+}

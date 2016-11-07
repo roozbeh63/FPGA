@@ -1,0 +1,7 @@
+obj-m += kmodule.o
+
+all:
+	make ARCH=arm CROSS_COMPILE=/home/roozbeh/Xilinx/SDK/2016.2/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi- -C ~/Xilinx/linux-kernel/linux-xlnx/ M=$(PWD) modules
+
+clean:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
