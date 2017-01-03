@@ -1,5 +1,5 @@
 export ARCH:=arm
-export CROSS_COMPILE:=/home/roozbeh/Xilinx/SDK/2016.2/gnu/arm/lin/bin-bas/arm-xilinx-linux-gnueabi-
+export CROSS_COMPILE:=/home/roozbeh/Xilinx/SDK/2016.3/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-
 # If KERNELRELEASE is defined, we've been invoked from the
 # kernel build system and can use its language.
 ifneq ($(KERNELRELEASE),)

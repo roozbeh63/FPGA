@@ -868,3 +868,12 @@ make: Nothing to be done for `all'.
 10:55:51 **** Incremental Build of configuration Debug for project test ****
 make all 
 make: Nothing to be done for `all'.
+13:27:02 **** Build of project device_tree_bsp_0 ****
+make -k all 
+make: Nothing to be done for `all'.
+13:29:34 **** Auto Build of project device_tree_bsp_0 ****
+make -k all 
+dtc -I dts -O dtb -o devicetree.dtb system.dts
+13:29:36 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.

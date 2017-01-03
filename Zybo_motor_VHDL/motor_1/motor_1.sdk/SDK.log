@@ -259,3 +259,21 @@ com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 12:32:29 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:25:50 INFO  : Registering command handlers for SDK TCF services
+13:25:51 INFO  : Launching XSCT server: xsct -n -interactive /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/temp_xsdb_launch_script.tcl
+13:25:53 INFO  : XSCT server has started successfully.
+13:25:54 INFO  : Successfully done setting XSCT server connection channel  
+13:25:54 INFO  : Successfully done setting SDK workspace  
+13:25:54 INFO  : Restoring global repository preferences: 
+		 /home/roozbeh/Xilinx/SDK/2016.3/device-tree-xlnx
+13:25:54 INFO  : Processing command line option -hwspec /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper.hdf.
+13:31:50 INFO  : Registering command handlers for SDK TCF services
+13:31:50 INFO  : Launching XSCT server: xsct -n -interactive /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/temp_xsdb_launch_script.tcl
+13:31:52 INFO  : XSCT server has started successfully.
+13:31:52 INFO  : Successfully done setting XSCT server connection channel  
+13:31:53 INFO  : Successfully done setting SDK workspace  
+13:31:53 INFO  : Restoring global repository preferences: 
+		 /home/roozbeh/Xilinx/SDK/2016.3/device-tree-xlnx
+13:31:53 INFO  : Processing command line option -hwspec /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper.hdf.
+13:31:53 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_2.
+13:32:07 INFO  : BSP Project P/device_tree_bsp_0 has been successfully migrated.

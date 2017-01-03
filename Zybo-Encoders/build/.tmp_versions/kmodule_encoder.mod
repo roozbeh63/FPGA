@@ -1,2 +1,2 @@
-/home/roozbeh/Zybo_files/Zybo-Encoders/build/kmodule_encoder.ko
-/home/roozbeh/Zybo_files/Zybo-Encoders/build/kmodule_encoder.o
+/home/roozbeh/Git/FPGA/Zybo-Encoders/build/kmodule_encoder.ko
+/home/roozbeh/Git/FPGA/Zybo-Encoders/build/kmodule_encoder.o

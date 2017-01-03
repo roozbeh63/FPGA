@@ -9,7 +9,7 @@
 
 #define DRIVER_AUTHOR "Janou Christophe <j.christophe@student.fontys.nl>, Marco Veltman <m.veltman@student.fontys.nl>"
 #define DRIVER_DESC   "Device driver"
-#define DEV_NAME 	  "zedboard_enc"
+#define DEV_NAME 	  "zybo_enc"
 
 //#define DEBUG
 
@@ -38,7 +38,7 @@ struct zybo_enc_dev *encoders;
 
 /* Table of "compatible" values to search for */
 static const struct of_device_id zybo_encoder_of_match[] = {
-{ .compatible = "xlnx,rotary-encoder-1.0", },
+{ .compatible = "xlnx,encoder-2.0", },
 {},
 };
 MODULE_DEVICE_TABLE(of, zybo_encoder_of_match);
@@ -88,6 +88,7 @@ static ssize_t enc_read(struct file *f, char *buf,
     //The correct way to access hardware registers is with iowrite32(), ioread32() and other io-something functions and macros. All device drivers demonstrate this.
     valuer = ioread32(encoders[minor]._register);
     printk("%lu - %p , %d\n", cast, encoders[minor]._register, valuer);
+
 #endif
 
     //real data
@@ -97,7 +98,8 @@ static ssize_t enc_read(struct file *f, char *buf,
     dir = (pos & DIR_MASK)>>31;
     pos &= POS_MASK;
 
-    printk("position: %d, direction %d\n", pos, dir);
+    //printk("position: %d, direction %d\n", pos, dir);
+    printk("%d %d\n", pos, dir);
     return 0;
 }
 

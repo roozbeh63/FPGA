@@ -45,14 +45,14 @@ static int memory_request = 0;
 
 //Custom struct to store the data we want in the driver
 struct PWM_data {
-    uint32_t* pulsewidth_address;
-    uint32_t* frequency_address;
-    uint32_t* pins_address;
+    uint32_t* duty_address;
+    uint32_t* period_address;
+    uint32_t* enable_address;
     int 		   message_read;
     uint32_t   base_register;
     struct list_head device_entry;
     dev_t		   devt;
-    };
+};
 
 /*------------------------------------------------------------------------------------------------------------------*/
 /*Device node handler functions and definition struct																*/
@@ -78,7 +78,7 @@ static ssize_t PWM_read(struct file* filp, char __user *buffer, size_t lenght, l
     if(PWM->message_read)
         return 0;
     //Read from the I/O register
-    fpga_value = ioread32(PWM->frequency_address);
+    fpga_value = ioread32(PWM->period_address);
 
     copied = snprintf(int_array, 20, "%i\n", fpga_value);
 
@@ -106,7 +106,7 @@ static ssize_t PWM_write(struct file* filp, const char __user *buffer, size_t le
         retval = 8192;
     }
     //Write to the I/O register
-    iowrite32(converted_value, PWM->frequency_address);
+    iowrite32(converted_value, PWM->period_address);
     return retval ? retval : count;
 }
 
@@ -144,7 +144,7 @@ static int PWM_release(struct inode* inode, struct file* filp)
 {
     //Remove the mutex lock, so other processes can use the device.
     mutex_unlock(&PWM_device_mutex);
-//	printk(KERN_INFO "Unlocking mutex\n");
+    //	printk(KERN_INFO "Unlocking mutex\n");
     return 0;
 }
 
@@ -180,15 +180,15 @@ static ssize_t sys_set_node(struct device* dev, struct device_attribute* attr, c
             // HKMS: ik zou een array maken van filenamen en adressen, loop door de namen om te kijken welke file
             // HKMS: benaderd wordt en neem dan het bijpassende adres over. Makkelijker configureren en voorkomt
             // HKMS: code explosie bij nog meer files
-            if(strcmp(attr->attr.name, "FREQUENCY") == 0)
+            if(strcmp(attr->attr.name, "PERIOD") == 0)
             {
-                address = PWM->frequency_address;
+                address = PWM->period_address;
                 printk(KERN_INFO "Frenquency address%d\n", address);
                 retval = kstrtoint(buffer, 0, &converted_value);
             }
             else if(strcmp(attr->attr.name, "DUTY") == 0)
             {
-                address = PWM->pulsewidth_address;
+                address = PWM->duty_address;
                 printk(KERN_INFO "Duty address%d\n", address);
                 retval = kstrtoint(buffer, 0, &converted_value);
                 if(converted_value)
@@ -202,7 +202,7 @@ static ssize_t sys_set_node(struct device* dev, struct device_attribute* attr, c
             }
             else if(strcmp(attr->attr.name, "ENABLE") == 0)
             {
-                address = PWM->pins_address;
+                address = PWM->enable_address;
                 printk(KERN_INFO "Enable address%d\n", address);
                 retval = kstrtoint(buffer, 0, &converted_value);
                 if(converted_value)
@@ -241,19 +241,19 @@ static ssize_t sys_read_node(struct device* dev, struct device_attribute* attr, 
         //Check if the struct is the correct one.
         if(PWM->devt == dev->devt) {
             //Grab the address for the node that is being called.
-            if(strcmp(attr->attr.name, "FREQUENCY") == 0)
+            if(strcmp(attr->attr.name, "PERIOD") == 0)
             {
-                address = PWM->frequency_address;
+                address = PWM->period_address;
                 printk(KERN_INFO "Frenquency address%d\n", address);
             }
             else if(strcmp(attr->attr.name, "DUTY") == 0)
             {
-                address = PWM->pulsewidth_address;
+                address = PWM->duty_address;
                 printk(KERN_INFO "DUTY address%d\n", address);
             }
             else if(strcmp(attr->attr.name, "ENABLE") == 0)
             {
-                address = PWM->pins_address;
+                address = PWM->enable_address;
                 printk(KERN_INFO "Enable address%d\n", address);
             }
             else
@@ -274,12 +274,12 @@ static ssize_t sys_read_node(struct device* dev, struct device_attribute* attr, 
 }
 
 //Define the device attributes for the sysfs, and their handler functions.
-static DEVICE_ATTR(FREQUENCY, S_IRUSR | S_IWUSR, sys_read_node, sys_set_node);
+static DEVICE_ATTR(PERIOD, S_IRUSR | S_IWUSR, sys_read_node, sys_set_node);
 static DEVICE_ATTR(ENABLE, S_IRUSR | S_IWUSR, sys_read_node, sys_set_node);
 static DEVICE_ATTR(DUTY, S_IRUSR | S_IWUSR, sys_read_node, sys_set_node);
 
 static struct attribute *PWM_attrs[] = {
-    &dev_attr_FREQUENCY.attr,
+    &dev_attr_PERIOD.attr,
     &dev_attr_ENABLE.attr,
     &dev_attr_DUTY.attr,
     NULL,
@@ -303,7 +303,7 @@ static const struct attribute_group* PWM_attr_groups[] = {
 /*------------------------------------------------------------------------------------------------------*/
 
 static const struct of_device_id PWM_dt_ids[] = {
-    { .compatible = "xlnx,pwm-ip-1.0"},
+    { .compatible = "xlnx,pwm-2.0"},
     {},
 };
 
@@ -353,9 +353,9 @@ static int PWM_probe(struct platform_device *pltform_PWM)
         }
         PWM->base_register = res.start;
         //Remap the memory region in to usable memory
-        PWM->frequency_address = of_iomap(pltform_PWM->dev.of_node, 0);
-        PWM->pulsewidth_address = PWM->frequency_address + 1;
-        PWM->pins_address = PWM->frequency_address + 2;
+        PWM->period_address = of_iomap(pltform_PWM->dev.of_node, 0);
+        PWM->duty_address = PWM->period_address + 1;
+        PWM->enable_address = PWM->period_address + 2;
     }
     mutex_unlock(&device_list_lock);
 
@@ -366,9 +366,9 @@ static int PWM_probe(struct platform_device *pltform_PWM)
 
     return status;
 
-    failed_memregion:
-        device_destroy(PWM_class, PWM->devt);
-        clear_bit(MINOR(PWM->devt), minors);
+failed_memregion:
+    device_destroy(PWM_class, PWM->devt);
+    clear_bit(MINOR(PWM->devt), minors);
     return -ENODEV;
 }
 
@@ -382,7 +382,7 @@ static int PWM_remove(struct platform_device *pltform_PWM)
 
     mutex_lock(&device_list_lock);
     //Unmap the iomem
-    iounmap(PWM->pulsewidth_address);
+    iounmap(PWM->duty_address);
     //Delete the device from the list
     list_del(&PWM->device_entry);
     //Destroy the device node
@@ -451,12 +451,12 @@ static int PWM_init(void)
 
     return 0;
 
-    failed_driverreg:
-        class_destroy(PWM_class);
-    failed_classreg:
-        unregister_chrdev(PWM_major, DEVICE_NAME);
-    failed_chrdevreg:
-        return -1;
+failed_driverreg:
+    class_destroy(PWM_class);
+failed_classreg:
+    unregister_chrdev(PWM_major, DEVICE_NAME);
+failed_chrdevreg:
+    return -1;
 }
 
 static void PWM_exit(void)

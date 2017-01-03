@@ -50,4 +50,4 @@ __used
 __attribute__((section(".modinfo"))) =
 "depends=";
 
-MODULE_ALIAS("of:N*T*Cxlnx,rotary-encoder-1.0*");
+MODULE_ALIAS("of:N*T*Cxlnx,encoder-2.0*");
