@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# 
+# Start of session at: Tue Jan  3 12:32:27 2017
+# Process ID: 32030
+# Current directory: /home/roozbeh/Downloads/Motor_pwm_and_rotary_encoder_IPs/motor_1/motor_1.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/roozbeh/Downloads/Motor_pwm_and_rotary_encoder_IPs/motor_1/motor_1.sdk/webtalk/webtalk.log
+# Journal file: /home/roozbeh/Downloads/Motor_pwm_and_rotary_encoder_IPs/motor_1/motor_1.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
