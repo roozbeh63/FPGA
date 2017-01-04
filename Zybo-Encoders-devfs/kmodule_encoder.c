@@ -70,27 +70,6 @@ static ssize_t enc_read(struct file *f, char *buf,
 
     int minor = iminor(f->f_path.dentry->d_inode);
 
-#ifdef DEBUG
-    printk("minor: %d\n", minor);
-    unsigned long cast;
-    int valuer;
-    int value;
-    int valuee;
-    int valuecn;
-    int valueecn;
-    value = ioread32(encoders[minor]._direction);
-    valuee = ioread32(encoders[minor]._position);
-    valuecn = be32_to_cpup(encoders[minor]._direction);
-    valueecn = be32_to_cpup(encoders[minor]._position);
-    printk("%d - %d, %d - %d\n", value, valuecn, valuee, valueecn);
-
-    cast = (int)encoders[minor]._register;
-    //The correct way to access hardware registers is with iowrite32(), ioread32() and other io-something functions and macros. All device drivers demonstrate this.
-    valuer = ioread32(encoders[minor]._register);
-    printk("%lu - %p , %d\n", cast, encoders[minor]._register, valuer);
-
-#endif
-
     //real data
     pos = ioread32(encoders[minor]._register);
     //dir = ioread32(encoders[minor]._register + REG_DIRECTION);
@@ -99,7 +78,8 @@ static ssize_t enc_read(struct file *f, char *buf,
     pos &= POS_MASK;
 
     //printk("position: %d, direction %d\n", pos, dir);
-    printk("%d %d\n", pos, dir);
+    printk("%d%d\n", dir, pos);
+
     return 0;
 }
 
