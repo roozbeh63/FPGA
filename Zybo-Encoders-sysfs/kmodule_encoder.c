@@ -214,7 +214,6 @@ static ssize_t sys_read_node(struct device* dev, struct device_attribute* attr, 
     char int_array[20];
     unsigned int * address = 0;
     unsigned int fpga_value = 0;
-
     //Find the address of the struct using the device_list and the device_entry member of the PID_data struct.
     list_for_each_entry(Encoder, &device_list, device_entry) {
         //Check if the struct is the correct one.
@@ -223,12 +222,16 @@ static ssize_t sys_read_node(struct device* dev, struct device_attribute* attr, 
             if(strcmp(attr->attr.name, "POSITION") == 0)
             {
                 address = Encoder->base_address;
-                printk(KERN_INFO "position address%d\n", address);
+                fpga_value = ioread32(address);
+                fpga_value &= POS_MASK;
+                printk(KERN_INFO "position called%d\n", fpga_value);
             }
             else if(strcmp(attr->attr.name, "DIRECTION") == 0)
             {
                 address = Encoder->base_address;
-                printk(KERN_INFO "direction address%d\n", address);
+                fpga_value = ioread32(address);
+                fpga_value = (fpga_value  & DIR_MASK)>>31;
+                printk(KERN_INFO "direction called%d\n", fpga_value);
             }
             else
             {
@@ -238,12 +241,14 @@ static ssize_t sys_read_node(struct device* dev, struct device_attribute* attr, 
         }
     }
 
-    fpga_value = ioread32(address);
+
 
     copied = snprintf(int_array, 20, "%i", fpga_value);
-
+    printk(KERN_INFO "copied variable%d\n", copied);
+    printk(KERN_INFO "int array variable%s\n", &int_array);
     retval = copy_to_user(buffer, &int_array, copied);
-
+    printk(KERN_INFO "retval variable%d\n", retval);
+    printk(KERN_INFO "buffer variable%s\n", buffer);
     return retval ? retval : copied;
 }
 
