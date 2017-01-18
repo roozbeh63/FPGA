@@ -1,6 +1,6 @@
-15:04:05 **** Auto Build of project device_tree_bsp_0 ****
+10:30:44 **** Auto Build of project device_tree_bsp_0 ****
 make -k all 
 make: Nothing to be done for `all'.
 
-15:04:05 Build Finished (took 132ms)
+10:30:44 Build Finished (took 111ms)
 
