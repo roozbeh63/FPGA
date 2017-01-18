@@ -211,7 +211,7 @@ static ssize_t sys_read_node(struct device* dev, struct device_attribute* attr, 
     struct Encoder_data *Encoder;
     int retval = -1;
     int copied = 0;
-    char int_array[20];
+    char int_array[32];
     unsigned int * address = 0;
     unsigned int fpga_value = 0;
     //Find the address of the struct using the device_list and the device_entry member of the PID_data struct.
@@ -243,7 +243,7 @@ static ssize_t sys_read_node(struct device* dev, struct device_attribute* attr, 
 
 
 
-    copied = snprintf(int_array, 20, "%i", fpga_value);
+    copied = snprintf(int_array, 32, "%i", fpga_value);
     //printk(KERN_INFO "copied variable%d\n", copied);
     //printk(KERN_INFO "int array variable%s\n", &int_array);
     retval = copy_to_user(buffer, &int_array, copied);
