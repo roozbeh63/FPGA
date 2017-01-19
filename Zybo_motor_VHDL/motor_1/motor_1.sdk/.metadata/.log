@@ -16831,3 +16831,247 @@ java.lang.NullPointerException
 	at com.xilinx.sdk.tcf.debug.BaseTcfLaunch$1.run(BaseTcfLaunch.java:78)
 	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
 	at java.lang.Thread.run(Thread.java:745)
+!SESSION 2017-01-18 16:35:55.737 -----------------------------------------------
+eclipse.buildId=2016.3
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk
+
+!ENTRY org.eclipse.ui 2 0 2017-01-18 16:35:58.359
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-01-18 16:35:58.359
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2017-01-18 16:35:59.442
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-01-18 16:35:59.442
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:06.867
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:06.872
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:07.346
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:07.356
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:07.357
+!MESSAGE XSCT Command: [setws /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:07.358
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/roozbeh/Xilinx/SDK/2016.3/device-tree-xlnx"], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:07.359
+!MESSAGE XSCT command with result: [setws /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk], Result: [null, ]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:07.415
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/roozbeh/Xilinx/SDK/2016.3/device-tree-xlnx"], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:07.434
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:10.102
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:10.103
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:12.379
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:12.380
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:14.629
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:14.630
+!MESSAGE XSCT Command: [::hsi::utils::closehw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:14.655
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:14.656
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:16.745
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:16.755
+!MESSAGE XSCT Command: [::hsi::utils::openhw /tmp/system6464017536380465648.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:18.807
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /tmp/system6464017536380465648.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:19.400
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_0/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:19.407
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_0/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:19.408
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_0/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:19.411
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "device_tree",
+"osver": "",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:19.417
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_0/system.mss /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:22.930
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_0/system.mss /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:23.045
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_1/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:23.053
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_1/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:23.055
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_1/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:23.058
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_1/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "device_tree",
+"osver": "",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:23.059
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_1/system.mss /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-18 16:36:26.332
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/design_1_wrapper_hw_platform_1/system.hdf /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_1/system.mss /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.sdk/device_tree_bsp_1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-18 16:36:26.534
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:287)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:250)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-18 16:36:26.552
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-18 16:36:26.593
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-18 16:36:27.068
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:287)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:250)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-18 16:36:27.083
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-18 16:36:27.120
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

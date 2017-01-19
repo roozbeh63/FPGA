@@ -58,6 +58,7 @@ set rc [catch {
   set_property ip_repo_paths {
   /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/ip_repo/encoder_2.0
   /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/ip_repo/pwm_2.0
+  /home/roozbeh/Git/FPGA/Zybo_motor_VHDL
 } [current_project]
   set_property ip_cache_permissions disable [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]

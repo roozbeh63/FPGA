@@ -19,6 +19,7 @@ set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_repo_paths {
   /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/ip_repo/encoder_2.0
   /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/ip_repo/pwm_2.0
+  /home/roozbeh/Git/FPGA/Zybo_motor_VHDL
 } [current_project]
 set_property ip_cache_permissions disable [current_project]
 read_vhdl -library xil_defaultlib /home/roozbeh/Git/FPGA/Zybo_motor_VHDL/motor_1/motor_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd

@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Jan 18 10:51:46 2017">
+<application name="pa" timeStamp="Wed Jan 18 17:43:01 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="59cc5244da424a698e3547d6033e37ba" type="ProjectID"/>
-<property name="ProjectIteration" value="6" type="ProjectIteration"/>
+<property name="ProjectIteration" value="7" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -26,21 +26,24 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenBlockDesign" value="3" type="JavaHandler"/>
 <property name="OpenProject" value="6" type="JavaHandler"/>
 <property name="ReportIPStatus" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="2" type="JavaHandler"/>
+<property name="RunBitgen" value="3" type="JavaHandler"/>
 <property name="ShowView" value="2" type="JavaHandler"/>
+<property name="UpgradeIP" value="1" type="JavaHandler"/>
 <property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
 <property name="BaseDialog_CANCEL" value="1" type="GuiResourceData"/>
 <property name="BaseDialog_OK" value="13" type="GuiResourceData"/>
-<property name="BaseDialog_YES" value="1" type="GuiResourceData"/>
+<property name="BaseDialog_YES" value="2" type="GuiResourceData"/>
+<property name="BaseReportTab_RERUN" value="3" type="GuiResourceData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="3" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="6" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="7" type="GuiResourceData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="5" type="GuiResourceData"/>
 <property name="GettingStartedView_RECENT_PROJECTS" value="3" type="GuiResourceData"/>
-<property name="HPopupTitle_CLOSE" value="1" type="GuiResourceData"/>
-<property name="IPStatusTablePanel_IP_STATUS_TABLE" value="2" type="GuiResourceData"/>
-<property name="IPStatusTablePanel_MORE_INFO" value="2" type="GuiResourceData"/>
+<property name="HPopupTitle_CLOSE" value="2" type="GuiResourceData"/>
+<property name="IPStatusSectionPanel_UPGRADE_SELECTED" value="1" type="GuiResourceData"/>
+<property name="IPStatusTablePanel_IP_STATUS_TABLE" value="8" type="GuiResourceData"/>
+<property name="IPStatusTablePanel_MORE_INFO" value="7" type="GuiResourceData"/>
 <property name="MainMenuMgr_EXPORT" value="23" type="GuiResourceData"/>
 <property name="MainMenuMgr_FILE" value="32" type="GuiResourceData"/>
 <property name="MainMenuMgr_OPEN_RECENT_FILE" value="10" type="GuiResourceData"/>
@@ -61,13 +64,14 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ProjectNameChooser_CHOOSE_PROJECT_LOCATION" value="1" type="GuiResourceData"/>
 <property name="ReportIPStatusInfoDialog_IGNORE" value="1" type="GuiResourceData"/>
 <property name="SelectMenu_HIGHLIGHT" value="2" type="GuiResourceData"/>
+<property name="SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY" value="1" type="GuiResourceData"/>
 <property name="SystemBuilderView_ORIENTATION" value="1" type="GuiResourceData"/>
 <property name="SystemTab_REPORT_IP_STATUS" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="27" type="GuiMode"/>
+<property name="GuiMode" value="29" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="24" type="TclMode"/>
+<property name="TclMode" value="26" type="TclMode"/>
 </item>
 </section>
 </application>

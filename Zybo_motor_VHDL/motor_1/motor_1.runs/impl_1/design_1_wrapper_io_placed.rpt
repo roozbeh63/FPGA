@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
-| Date         : Tue Jan  3 13:13:39 2017
+| Date         : Wed Jan 18 16:34:59 2017
 | Host         : roozbeh-ThinkPad-T520 running 64-bit Ubuntu 14.04.5 LTS
 | Command      : report_io -file design_1_wrapper_io_placed.rpt
 | Design       : design_1_wrapper
@@ -62,7 +62,7 @@ Table of Contents
 | B7         | FIXED_IO_mio[4]   |            | PS_MIO4_500             | BIDIR         | LVCMOS33          |         |          8 | FAST |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | B8         | FIXED_IO_mio[2]   |            | PS_MIO2_500             | BIDIR         | LVCMOS33          |         |          8 | FAST |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | B9         | FIXED_IO_mio[51]  |            | PS_MIO51_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
-| B10        | FIXED_IO_ps_srstb |            | PS_SRST_B_501           | BIDIR         | HSTL_I_18         |         |            | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
+| B10        | FIXED_IO_ps_srstb |            | PS_SRST_B_501           | BIDIR         | LVCMOS18          |         |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | B11        |                   |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | B12        | FIXED_IO_mio[48]  |            | PS_MIO48_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | B13        | FIXED_IO_mio[50]  |            | PS_MIO50_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
@@ -79,7 +79,7 @@ Table of Contents
 | C4         |                   |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | C5         | FIXED_IO_mio[14]  |            | PS_MIO14_500            | BIDIR         | LVCMOS33          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |
 | C6         | FIXED_IO_mio[11]  |            | PS_MIO11_500            | BIDIR         | LVCMOS33          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |
-| C7         | FIXED_IO_ps_porb  |            | PS_POR_B_500            | BIDIR         | LVCMOS33          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
+| C7         | FIXED_IO_ps_porb  |            | PS_POR_B_500            | BIDIR         | LVCMOS33          |         |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | C8         | FIXED_IO_mio[15]  |            | PS_MIO15_500            | BIDIR         | LVCMOS33          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |
 | C9         |                   |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | C10        | FIXED_IO_mio[52]  |            | PS_MIO52_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
@@ -119,7 +119,7 @@ Table of Contents
 | E4         | DDR_addr[12]      |            | PS_DDR_A12_502          | BIDIR         | SSTL15            |         |            | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | E5         |                   |            | VCCO_DDR_502            | VCCO          |                   |         |            |      |                     |                      |   any** |            |           |          |      |                  |
 | E6         | FIXED_IO_mio[0]   |            | PS_MIO0_500             | BIDIR         | LVCMOS33          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |
-| E7         | FIXED_IO_ps_clk   |            | PS_CLK_500              | BIDIR         | LVCMOS33          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
+| E7         | FIXED_IO_ps_clk   |            | PS_CLK_500              | BIDIR         | LVCMOS33          |         |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | E8         | FIXED_IO_mio[13]  |            | PS_MIO13_500            | BIDIR         | LVCMOS33          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |
 | E9         | FIXED_IO_mio[10]  |            | PS_MIO10_500            | BIDIR         | LVCMOS33          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |
 | E10        |                   |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |

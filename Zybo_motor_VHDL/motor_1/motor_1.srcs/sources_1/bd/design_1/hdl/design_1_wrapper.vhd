@@ -1,8 +1,8 @@
---Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
---Date        : Thu Nov 17 14:53:41 2016
---Host        : DESKTOP-2A0HF8O running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
+--Date        : Wed Jan 18 16:32:31 2017
+--Host        : roozbeh-ThinkPad-T520 running 64-bit Ubuntu 14.04.5 LTS
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
