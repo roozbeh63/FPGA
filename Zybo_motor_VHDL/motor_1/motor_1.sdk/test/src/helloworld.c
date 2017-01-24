@@ -53,11 +53,11 @@ int main(){
     	xil_printf("go");
     	unsigned int data = 0;
     	// set pwm period
-    	Xil_Out32(0x43C10000, 0x186A0);
+    	Xil_Out32(0x43C10000, 0x5F5E100);
     	// set pwm duty cycle
-    	Xil_Out32(0x43C10004, 0xC350);
-    	//Xil_Out32(0x43C10004, 0xFF80);
-    	 //enable pwm, set direction to 1
+    	//Xil_Out32(0x43C10004, 0x2FAF080);
+    	Xil_Out32(0x43C10004, 0xFF80);
+    	// enable pwm, set direction to 1
     	Xil_Out32(0x43C10008, 0x3);
 
     while(1){

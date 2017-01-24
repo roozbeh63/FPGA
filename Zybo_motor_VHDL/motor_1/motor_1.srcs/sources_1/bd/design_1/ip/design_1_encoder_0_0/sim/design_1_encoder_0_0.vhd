@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2017 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2016 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -83,8 +83,9 @@ ENTITY design_1_encoder_0_0 IS
 END design_1_encoder_0_0;
 
 ARCHITECTURE design_1_encoder_0_0_arch OF design_1_encoder_0_0 IS
-  ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_1_encoder_0_0_arch: ARCHITECTURE IS "yes";
+
   COMPONENT encoder_v2_0 IS
     GENERIC (
       C_S00_AXI_DATA_WIDTH : INTEGER; -- Width of S_AXI data bus

@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2017 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2016 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -83,8 +83,9 @@ ENTITY design_1_encoder_0_0 IS
 END design_1_encoder_0_0;
 
 ARCHITECTURE design_1_encoder_0_0_arch OF design_1_encoder_0_0 IS
-  ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_1_encoder_0_0_arch: ARCHITECTURE IS "yes";
+
   COMPONENT encoder_v2_0 IS
     GENERIC (
       C_S00_AXI_DATA_WIDTH : INTEGER; -- Width of S_AXI data bus
@@ -118,11 +119,11 @@ ARCHITECTURE design_1_encoder_0_0_arch OF design_1_encoder_0_0 IS
     );
   END COMPONENT encoder_v2_0;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF design_1_encoder_0_0_arch: ARCHITECTURE IS "encoder_v2_0,Vivado 2016.3";
+  ATTRIBUTE X_CORE_INFO OF design_1_encoder_0_0_arch: ARCHITECTURE IS "encoder_v2_0,Vivado 2015.4";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_encoder_0_0_arch : ARCHITECTURE IS "design_1_encoder_0_0,encoder_v2_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_encoder_0_0_arch: ARCHITECTURE IS "design_1_encoder_0_0,encoder_v2_0,{x_ipProduct=Vivado 2016.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=encoder,x_ipVersion=2.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_encoder_0_0_arch: ARCHITECTURE IS "design_1_encoder_0_0,encoder_v2_0,{x_ipProduct=Vivado 2015.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=encoder,x_ipVersion=2.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_awprot: SIGNAL IS "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT";

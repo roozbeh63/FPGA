@@ -1,1 +1,1 @@
-src/helloworld.o src/helloworld.o: ../src/helloworld.c
+src/helloworld.o src/helloworld.d: ../src/helloworld.c

@@ -11,15 +11,15 @@
 
 #Switches
 #IO_L19N_T3_VREF_35
-set_property PACKAGE_PIN T20 [get_ports rotary_a]
+set_property PACKAGE_PIN G15 [get_ports rotary_a]
 set_property IOSTANDARD LVCMOS33 [get_ports rotary_a]
 
 #IO_L24P_T3_34
-set_property PACKAGE_PIN U20 [get_ports rotary_b]
+set_property PACKAGE_PIN P15 [get_ports rotary_b]
 set_property IOSTANDARD LVCMOS33 [get_ports rotary_b]
 
 #IO_L4N_T0_34
-set_property PACKAGE_PIN V20 [get_ports rotary_i]
+set_property PACKAGE_PIN W13 [get_ports rotary_i]
 set_property IOSTANDARD LVCMOS33 [get_ports rotary_i]
 
 ##IO_L9P_T1_DQS_34
@@ -45,15 +45,15 @@ set_property IOSTANDARD LVCMOS33 [get_ports rotary_i]
 
 ##LEDs
 #IO_L23P_T3_35
-set_property PACKAGE_PIN V15 [get_ports pwm]
+set_property PACKAGE_PIN M14 [get_ports pwm]
 set_property IOSTANDARD LVCMOS33 [get_ports pwm]
 
 #IO_L23N_T3_35
-set_property PACKAGE_PIN W15 [get_ports dir]
+set_property PACKAGE_PIN M15 [get_ports dir]
 set_property IOSTANDARD LVCMOS33 [get_ports dir]
 
 #IO_0_35
-set_property PACKAGE_PIN T11 [get_ports en]
+set_property PACKAGE_PIN G14 [get_ports en]
 set_property IOSTANDARD LVCMOS33 [get_ports en]
 
 ##IO_L3N_T0_DQS_AD1N_35
