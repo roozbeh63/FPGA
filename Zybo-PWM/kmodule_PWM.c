@@ -47,7 +47,6 @@ static int memory_request = 0;
 struct PWM_data {
     uint32_t* period_address;
     uint32_t* duty_address;
-    uint32_t* direction_address;
     uint32_t* enable_address;
     int 		   message_read;
     uint32_t   base_register;
@@ -108,6 +107,7 @@ static ssize_t PWM_write(struct file* filp, const char __user *buffer, size_t le
     }
     //Write to the I/O register
     iowrite32(converted_value, PWM->period_address);
+    printk(KERN_INFO "I am in pwm write function%d\n", converted_value);
     return retval ? retval : count;
 }
 
@@ -172,7 +172,7 @@ static ssize_t sys_set_node(struct device* dev, struct device_attribute* attr, c
     unsigned int converted_value = 0;
     unsigned int * address = 0;
     int count = lenght;
-
+    printk(KERN_INFO "buffer value%s\n", buffer);
     //Find the address of the struct using the device_list and the device_entry member of the PID_data struct.
     list_for_each_entry(PWM, &device_list, device_entry) {
         //Check if the struct is the correct one.
@@ -192,42 +192,28 @@ static ssize_t sys_set_node(struct device* dev, struct device_attribute* attr, c
                 address = PWM->duty_address;
                 printk(KERN_INFO "Duty address%d\n", address);
                 retval = kstrtoint(buffer, 0, &converted_value);
-                if(converted_value)
+                /*if(converted_value)
                 {
                     converted_value = ioread32(address)|converted_value;
                 }
                 else
                 {
                     converted_value = ioread32(address)&0xFFFD;
-                }
-            }
-            else if(strcmp(attr->attr.name, "DIRECTION") == 0)
-            {
-                address = PWM->direction_address;
-                printk(KERN_INFO "Direction address%d\n", address);
-                retval = kstrtoint(buffer, 0, &converted_value);
-                if(converted_value)
-                {
-                    converted_value = ioread32(address)|(converted_value << 1);
-                }
-                else
-                {
-                    converted_value = ioread32(address)&0xFFFE;
-                }
+                }*/
             }
             else if(strcmp(attr->attr.name, "ENABLE") == 0)
             {
                 address = PWM->enable_address;
                 printk(KERN_INFO "Enable address%d\n", address);
                 retval = kstrtoint(buffer, 0, &converted_value);
-                if(converted_value)
+                /*if(converted_value)
                 {
                     converted_value = ioread32(address)|(converted_value << 1);
                 }
                 else
                 {
                     converted_value = ioread32(address)&0xFFFF;
-                }
+                }*/
             }
 
             else
@@ -237,7 +223,8 @@ static ssize_t sys_set_node(struct device* dev, struct device_attribute* attr, c
             }
         }
     }
-
+    printk(KERN_INFO "converted value%d\n", converted_value);
+    printk(KERN_INFO "address%d\n", address);
     iowrite32(converted_value, address);
 
     return retval ? retval : count;
@@ -267,11 +254,6 @@ static ssize_t sys_read_node(struct device* dev, struct device_attribute* attr, 
                 address = PWM->duty_address;
                 printk(KERN_INFO "DUTY address%d\n", address);
             }
-            else if(strcmp(attr->attr.name, "DIRECTION") == 0)
-            {
-                address = PWM->direction_address;
-                printk(KERN_INFO "Direction address%d\n", address);
-            }
             else if(strcmp(attr->attr.name, "ENABLE") == 0)
             {
                 address = PWM->enable_address;
@@ -298,12 +280,10 @@ static ssize_t sys_read_node(struct device* dev, struct device_attribute* attr, 
 static DEVICE_ATTR(PERIOD, S_IRUSR | S_IWUSR, sys_read_node, sys_set_node);
 static DEVICE_ATTR(ENABLE, S_IRUSR | S_IWUSR, sys_read_node, sys_set_node);
 static DEVICE_ATTR(DUTY, S_IRUSR | S_IWUSR, sys_read_node, sys_set_node);
-static DEVICE_ATTR(DIRECTION, S_IRUSR | S_IWUSR, sys_read_node, sys_set_node);
 static struct attribute *PWM_attrs[] = {
     &dev_attr_PERIOD.attr,
     &dev_attr_ENABLE.attr,
     &dev_attr_DUTY.attr,
-    &dev_attr_DIRECTION.attr,
     NULL,
 };
 
@@ -377,8 +357,7 @@ static int PWM_probe(struct platform_device *pltform_PWM)
         //Remap the memory region in to usable memory
         PWM->period_address = of_iomap(pltform_PWM->dev.of_node, 0);
         PWM->duty_address = PWM->period_address + 1;
-        PWM->direction_address = PWM->period_address + 2;
-        PWM->enable_address = PWM->period_address + 3;
+        PWM->enable_address = PWM->period_address + 2;
     }
     mutex_unlock(&device_list_lock);
 
